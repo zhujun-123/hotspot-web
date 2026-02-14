@@ -33,7 +33,9 @@ const nitroOption: Parameters<typeof viteNitro>[0] = {
 }
 
 if (process.env.VERCEL) {
-  nitroOption.preset = "vercel-edge"
+  // 使用 Node.js Serverless Functions 代替 Edge Runtime
+  // Edge Runtime 对爬虫任务不友好，有严格的超时限制
+  nitroOption.preset = "vercel"
   // You can use other online database, do it yourself. For more info: https://db0.unjs.io/connectors
   nitroOption.database = undefined
   // nitroOption.vercel = {
