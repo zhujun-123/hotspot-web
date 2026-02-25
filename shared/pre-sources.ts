@@ -490,7 +490,7 @@ export const originSources = {
     home: "https://reddit.com",
     interval: Time.Common,
     title: "SaaS/Entrepreneur 需求",
-    disable: true, // 暂时禁用:网络访问问题
+    // disable: true, // 暂时禁用:网络访问问题
   },
   "githubDemand": {
     name: "GitHub Issues",
