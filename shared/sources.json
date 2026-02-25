@@ -563,5 +563,41 @@
     "color": "green",
     "interval": 1800000,
     "title": "热播榜"
+  },
+  "reddit-signals": {
+    "name": "Reddit 需求信号",
+    "column": "demand",
+    "home": "https://reddit.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "社区需求",
+    "desc": "从SaaS/创业/开发社区抓取真实需求信号"
+  },
+  "github-issues": {
+    "name": "GitHub Issues",
+    "column": "demand",
+    "home": "https://github.com",
+    "color": "slate",
+    "interval": 1800000,
+    "title": "功能需求",
+    "desc": "热门开源项目的feature requests"
+  },
+  "hackernews-ask": {
+    "name": "HN Ask",
+    "column": "demand",
+    "home": "https://news.ycombinator.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "开发者问答",
+    "desc": "Hacker News社区真实问题和需求"
+  },
+  "producthunt-trends": {
+    "name": "Product Hunt",
+    "column": "demand",
+    "home": "https://producthunt.com",
+    "color": "red",
+    "interval": 3600000,
+    "title": "新品趋势",
+    "desc": "最新产品和替代品动向"
   }
 }

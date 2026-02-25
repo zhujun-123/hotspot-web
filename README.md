@@ -11,6 +11,7 @@ English | [简体中文](README.zh-CN.md) | [日本語](README.ja-JP.md)
 
 - Clean and elegant UI design for optimal reading experience
 - Real-time updates on trending news
+- **📡 Demand Radar** - Multi-source demand signal aggregation (Reddit, GitHub Issues, HN Ask, Product Hunt)
 - GitHub OAuth login with data synchronization
 - 30-minute default cache duration (logged-in users can force refresh)
 - Adaptive scraping interval (minimum 2 minutes) based on source update frequency to optimize resource usage and prevent IP bans
