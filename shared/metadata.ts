@@ -15,9 +15,6 @@ export const columns = {
   finance: {
     zh: "财经",
   },
-  demand: {
-    zh: "需求雷达",
-  },
   focus: {
     zh: "关注",
   },
@@ -27,9 +24,12 @@ export const columns = {
   hottest: {
     zh: "最热",
   },
+  demandRadar: {
+    zh: "需求雷达",
+  },
 } as const
 
-export const fixedColumnIds = ["focus", "hottest", "realtime"] as const satisfies Partial<ColumnID>[]
+export const fixedColumnIds = ["focus", "hottest", "realtime", "demandRadar"] as const satisfies Partial<ColumnID>[]
 export const hiddenColumns = Object.keys(columns).filter(id => !fixedColumnIds.includes(id as any)) as HiddenColumnID[]
 
 export const metadata: Metadata = typeSafeObjectFromEntries(typeSafeObjectEntries(columns).map(([k, v]) => {
@@ -48,6 +48,11 @@ export const metadata: Metadata = typeSafeObjectFromEntries(typeSafeObjectEntrie
       return [k, {
         name: v.zh,
         sources: typeSafeObjectEntries(sources).filter(([, v]) => v.type === "realtime" && !v.redirect).map(([k]) => k),
+      }]
+    case "demandRadar":
+      return [k, {
+        name: v.zh,
+        sources: typeSafeObjectEntries(sources).filter(([, v]) => v.type === "demand" && !v.redirect).map(([k]) => k),
       }]
     default:
       return [k, {

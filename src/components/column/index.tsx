@@ -1,4 +1,5 @@
 import type { FixedColumnID } from "@shared/types"
+import { metadata } from "@shared/metadata"
 import { useTitle } from "react-use"
 import { NavBar } from "../navbar"
 import { Dnd } from "./dnd"

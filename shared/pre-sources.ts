@@ -483,6 +483,39 @@ export const originSources = {
       },
     },
   },
+  "redditDemand": {
+    name: "Reddit 需求",
+    type: "demand",
+    color: "orange",
+    home: "https://reddit.com",
+    interval: Time.Common,
+    title: "SaaS/Entrepreneur 需求",
+    disable: true, // 暂时禁用:网络访问问题
+  },
+  "githubDemand": {
+    name: "GitHub Issues",
+    type: "demand",
+    color: "slate",
+    home: "https://github.com",
+    interval: Time.Common,
+    title: "开源项目需求",
+  },
+  "hackernewsDemand": {
+    name: "HN Ask",
+    type: "demand",
+    color: "orange",
+    home: "https://news.ycombinator.com",
+    interval: Time.Common,
+    title: "开发者问题",
+  },
+  "producthuntDemand": {
+    name: "Product Hunt",
+    type: "demand",
+    color: "red",
+    home: "https://www.producthunt.com",
+    interval: Time.Common,
+    title: "新品趋势",
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {

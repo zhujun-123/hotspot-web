@@ -69,7 +69,7 @@ export interface Source {
   /**
    * Default normal timeline
    */
-  type?: "hottest" | "realtime"
+  type?: "hottest" | "realtime" | "demand"
   column?: HiddenColumnID
   home?: string
   /**
