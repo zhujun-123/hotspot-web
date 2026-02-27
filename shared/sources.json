@@ -595,5 +595,17 @@
     "home": "https://www.producthunt.com",
     "color": "red",
     "interval": 1800000
+  },
+  "xTrending": {
+    "name": "X热门",
+    "type": "xTrending",
+    "link": "https://twitter.com/explore",
+    "column": "follow"
+  },
+  "youtubeTrending": {
+    "name": "YouTube热门",
+    "type": "youtubeTrending",
+    "link": "https://youtube.com/feed/trending",
+    "column": "follow"
   }
 }
