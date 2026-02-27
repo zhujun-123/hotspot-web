@@ -607,5 +607,12 @@
     "type": "youtubeTrending",
     "link": "https://youtube.com/feed/trending",
     "column": "follow"
+  },
+  "googleTrendsSG": {
+    "name": "Google热搜(新加坡)",
+    "type": "demand",
+    "home": "https://trends.google.com/trending?geo=SG",
+    "color": "blue",
+    "interval": 600000
   }
 }
